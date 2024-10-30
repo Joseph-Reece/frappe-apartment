@@ -8,12 +8,13 @@
  "field_order": [
   "article_name",
   "image",
-  "author",
   "description",
+  "column_break_dlkb",
+  "naming_series",
+  "author",
   "isbn",
   "status",
-  "publisher",
-  "naming_series"
+  "publisher"
  ],
  "fields": [
   {
@@ -59,11 +60,17 @@
    "fieldtype": "Data",
    "label": "Naming Series",
    "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "column_break_dlkb",
+   "fieldtype": "Column Break"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-25 16:23:19.281062",
+ "modified": "2024-10-25 16:37:37.409609",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
