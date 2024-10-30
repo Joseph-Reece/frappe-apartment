@@ -1,7 +1,41 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+
+
+
+![{{ title }}]({{ image }})
+
+
+{{ title }}
+===========
+
+
+By {{ author }}
+
+
+
+
+ {%- if status == 'Available' -%}
+
+ Available
+ {%- elif status == 'Issued' -%}
+
+ Issued
+
+ {%- endif -%}
+
+
+
+Publisher: **{{ publisher }}**
+ISBN: **{{ isbn }}**
+
+{{ description }}
+
+
+
+
+
 {% endblock %}
 
 <!-- this is a sample default web page template -->
