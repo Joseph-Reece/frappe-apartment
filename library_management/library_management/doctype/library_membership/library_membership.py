@@ -19,4 +19,4 @@ class LibraryMembership(Document):
 			},
 		)
         if exists:
-            frappe.throw("Library Member already has Membership")
+            frappe.throw("There is an active membership for this member")
